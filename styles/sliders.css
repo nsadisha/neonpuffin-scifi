@@ -4,11 +4,7 @@
     overflow:auto; 
 	margin:0 auto 0;
 	display:block;
-	width:100%;
-}
-
-.banner .slidesContainer {
-    width: 100%;
+	width:100vw;
 }
 
 .banner li
@@ -62,6 +58,10 @@
 /* //////////////// Responsice CSS //////////////// */
 
 @media only screen and (max-width: 960px) {
+    .banner li a img{
+        width: 100vw;
+    }
+
 	#news {
         width: calc(100vw - 130px);
         padding-left: 130px;
