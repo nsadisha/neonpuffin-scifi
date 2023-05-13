@@ -4,7 +4,11 @@
     overflow:auto; 
 	margin:0 auto 0;
 	display:block;
-	width:960px;
+	width:100%;
+}
+
+.banner .slidesContainer {
+    width: 100%;
 }
 
 .banner li
@@ -51,5 +55,29 @@
 	width:59px;
     margin-top:-19px;
     margin-left:771px;
+    float: right;
     background:url('images/latest_news_read_more.png') left top no-repeat; /* in styles/images */
+}
+
+/* //////////////// Responsice CSS //////////////// */
+
+@media only screen and (max-width: 960px) {
+	#news {
+        width: calc(100vw - 130px);
+        padding-left: 130px;
+    }
+
+    #news li {
+        margin-left:0;
+        max-width: calc(100vw - 130px);
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .news_read {
+        margin-left: 0;
+        /* display: none; */
+    }
 }
