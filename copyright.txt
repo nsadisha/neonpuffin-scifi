@@ -1,0 +1,7 @@
+<div class="wrapper">
+    <div id="copyright">
+        <p class="float_left">&copy; 2014-2021 SCIFI<a style="color:#666666"><b>4</b></a>EVER - All Rights Reserved</p>
+        <p class="float_right"><a href="review_policy.html">Review Policy</a> | <a href="privacy_policy.html">Privacy Policy</a> | <a href="terms_of_use.html">Terms of Use</a></p>
+	<br class="clear" />
+    </div>
+</div>

@@ -1,0 +1,4 @@
+<script src="java/shares.js"></script>
+<script>
+    new needShareDropdown(document.getElementById('share-button-1'));
+</script>

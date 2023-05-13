@@ -1,0 +1,3020 @@
+@import url(menus.css);
+@import url(forms.css);
+@import url(images.css);
+@import url(tables.css);
+@import url(sliders.css);
+@import url(shares.css);
+
+body
+{
+	margin:0;
+	padding:0;
+	font-size:12px;
+	font-family:verdana, Arial, Helvetica, sans-serif;
+    color:#999999;
+	background-color:#111111;
+}
+
+img
+{
+    border:0;
+    display:block;
+    padding:0;
+    margin:0;
+}
+
+.justify
+{
+    text-align:justify;
+}
+
+.bold
+{
+    font-weight:bold;
+}
+
+.center
+{
+    text-align:center;
+}
+
+.right
+{
+    text-align:right;
+}
+
+.nostart
+{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+.clear
+{
+    clear:both;
+}
+
+br.clear
+{
+    clear:both;
+    margin-top:-15px;
+}
+
+a
+{
+    outline:none;
+    text-decoration:none;
+}
+
+.float_left
+{
+    float:left;
+}
+
+.float_right
+{
+    float:right;
+}
+
+.image_left, .image_right
+{
+    padding:0px;
+}
+
+.image_left
+{
+    float:left;
+    margin:0 12px 8px 0;
+    clear:left;
+}
+
+.image_right
+{
+    float:right;
+    margin:0 0 8px 12px;
+    clear:right;
+}
+
+.image_top_left, .image_top_right
+{
+    padding:0px;
+    padding-top:18px;
+}
+
+.image_top_left
+{
+    float:left;
+    margin:0 12px 8px 0;
+    clear:left;
+}
+
+.image_top_right
+{
+    float:right;
+    margin:0 0 8px 12px;
+    clear:right;
+}
+
+.image_book_left, .image_book_right
+{
+    padding:0px;
+    padding-top:10px;
+}
+
+.image_book_left
+{
+    float:left;
+    margin:0 12px 8px 0;
+    clear:left;
+}
+
+.image_book_right
+{
+    float:right;
+    margin:0 0 8px 12px;
+    clear:right;
+}
+
+/* Wrapper */
+div.wrapper
+{
+	display:block;
+	width:100%;
+	margin:0;
+	padding:0;
+	text-align:left;
+}
+
+div.wrapper h1
+{
+	margin:0;
+	padding:0 0 6px 0;
+	font-size:40px;
+	font-weight:normal;
+	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+}
+
+div.wrapper h2
+{
+	margin:0;
+	padding:0 0 8px 0;
+	font-size:30px;
+	font-weight:normal;
+	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+}
+
+div.wrapper h3
+{
+	margin:0;
+	padding:0 0 8px 0;
+	font-size:26px;
+	font-weight:normal;
+	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+}
+
+div.wrapper h4
+{
+	margin:0;
+	padding:0 0 8px 0;
+	font-size:22px;
+	font-weight:normal;
+	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+}
+
+div.wrapper h5
+{
+	margin:0;
+	padding:0 0 8px 0;
+	font-size:18px;
+	font-weight:normal;
+	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+}
+
+div.wrapper h6
+{
+	margin:0;
+	padding:0 0 8px 0;
+	font-size:14px;
+	font-weight:normal;
+	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* General */
+#header, #featured, #slideshow, #intro, #intro_small, #intro_mini, #container, #footer, #copyright
+{
+	position:relative;
+	margin:0 auto 0;
+	display:block;
+	width:960px;
+}
+
+.slideshow_multiple
+{
+    position:relative;
+	margin:0 auto 0;
+	display:block;
+	width:960px;
+}
+
+/* General - Categories */
+.intro_category, .intro_category_small, .intro_category_mini
+{
+	position:relative;
+	margin:0 auto 0;
+	display:block;
+	width:960px;
+}
+
+/* Header */
+#header
+{
+	position:relative;
+	margin:0 auto 0;
+	display:block;
+	width:960px;
+	padding:5px 0px 5px 0px;
+    color:#999999;
+	background-color:#232323;
+}
+
+#header #logo
+{
+	display:block;
+	float:left;
+	width:60px;
+    padding-left:22px;
+    padding-right:12px;
+}
+
+#header h1 a
+{
+    color:#999999;
+	background-color:#232323;
+}
+
+/* Featured preview-box */
+#featured
+{
+	padding:15px 0 15px 0;
+}
+
+#featured .float_left
+{
+	display:block;
+	float:left;
+	width:575px;
+	height:320px;
+}
+
+#featured .float_right
+{
+	display:block;
+	float:right;
+	width:360px;
+	height:300px;
+	padding:10px;
+	color:#000000;
+    background:url('images/more.png') 293px 20px no-repeat; /* in styles/images */
+	background-color:#FFFFFF;
+}
+
+#featured .float_right a
+{
+	color:#000000;
+}
+
+#featured .float_right h3, #featured .float_right p
+{
+	margin:0 0 12px 2px;
+	padding:0;
+	border:none;
+	line-height:normal;
+}
+
+#featured .float_right h3
+{
+	font-size:30px;
+}
+
+#featured .float_right p
+{
+	font-size:14px;
+    line-height:20px !important;
+}
+
+#featured .float_right ul
+{
+	margin-left:4px;
+	padding:0;
+	list-style:none;
+}
+
+#featured ul li
+{
+	display:block;
+	float:left;
+	width:100px;
+	height:100px;
+	margin:0 16px 0 0;
+	padding:2px;
+	border:1px solid #333333;
+}
+
+#featured ul li.last
+{
+	margin-right:0;
+}
+
+/* Slideshow thumbnail-preview-boxes */
+#slideshow
+{
+    padding-top:5px;
+    margin-left:-7px;
+}
+
+#slideshow ul li
+{
+	display:block;
+	float:left;
+	width:100px;
+	height:100px;
+	margin:0 15px 15px 0;
+	padding:2px;
+	border:1px solid #333333;
+}
+
+#slideshow ul li.last
+{
+	margin-right:0;
+}
+
+.slideshow_multiple
+{
+    padding-top:0px;
+    margin-left:-7px;
+}
+
+.slideshow_multiple ul li
+{
+	display:block;
+	float:left;
+	width:100px;
+	height:100px;
+	margin:0 15px 15px 0;
+	padding:2px;
+	border:1px solid #333333;
+}
+
+.slideshow_multiple ul li.last
+{
+	margin-right:0;
+}
+
+/* Intro preview-box v1 */
+#intro
+{
+	padding:0px 0 15px 0;
+}
+
+#intro ul
+{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+#intro li
+{
+	display:block;
+	float:left;
+	width:300px;
+	margin:0 12px 0 0;
+	padding-left:6px;
+    padding-right:6px;
+    padding-bottom:10px;
+    color:#000000;
+    background-color:#FFFFFF;
+}
+
+#intro li.negative
+{
+	display:block;
+	float:left;
+	width:300px;
+	margin:0 12px 0 0;
+	padding-left:6px;
+    padding-right:6px;
+    padding-bottom:10px;
+    color:#000000;            
+    background-color:#C0C0C0;
+}
+
+#intro li.last
+{
+	margin-right:0;
+}
+
+#intro h3, #intro p, #intro img, #intro div
+{
+	margin:0 0 10px 0;
+	padding:0;
+}
+
+#intro h3
+{
+	padding-top:2px;
+    color:#000000;
+    background-color:#FFFFFF;
+}
+
+#intro h3.negative
+{
+    color:#000000;
+    background-color:#C0C0C0;
+}
+
+#intro p
+{
+    line-height:16px !important;
+}
+
+#intro div.image_holder
+{
+	display:block;
+	width:300px;
+}
+
+#intro div.image_holder img
+{
+    margin-top:-17px;
+	padding:0;
+	border:none;
+}
+
+#intro div.header_holder
+{
+	display:block;
+	width:310px;
+}
+
+#intro div.header_holder img
+{
+    margin-left:-6px;
+	padding:0;
+	border:none;
+}
+
+#intro p.readmore
+{
+	margin:0;
+	margin-left:-1px;
+}
+
+#intro p.readmore a
+{
+	padding:5px 15px;
+	font-weight:bold;
+    color:#FFFFFF;
+	background-color:#232323;
+}
+
+/* Intro preview-box v2 */
+#intro_small
+{
+	padding:0 0 15px 0;
+}
+
+#intro_small ul
+{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+#intro_small li
+{
+	display:block;
+	float:left;
+	width:300px;
+	margin:0 12px 0 0;
+	padding-left:6px;
+    padding-right:6px;
+    padding-bottom:10px;
+    color:#000000;
+    background-color:#FFFFFF;
+}
+
+#intro_small li.negative
+{
+	display:block;
+	float:left;
+	width:300px;
+	margin:0 12px 0 0;
+	padding-left:6px;
+    padding-right:6px;
+    padding-bottom:10px;
+    color:#000000;            
+    background-color:#C0C0C0;
+}
+
+#intro_small li.advert
+{
+	display:block;
+	float:left;
+	width:312px;
+	margin:0 12px 0 0;
+	padding:0 0 0 0;
+    border:0 0 0 0;
+    color:#000000;
+    background-color:#FFFFFF;
+}
+
+#intro_small li.last
+{
+	margin-right:0;
+}
+
+#intro_small h3, #intro_small p, #intro_small img, #intro_small div
+{
+	margin:0 0 10px 0;
+	padding:0;
+}
+
+#intro_small h3
+{
+	padding-top:2px;
+    color:#000000;
+    background-color:#FFFFFF;
+}
+
+#intro_small h3.negative
+{
+    color:#000000;
+    background-color:#C0C0C0;
+}
+
+#intro_small p
+{
+    line-height:16px !important;
+}
+
+#intro_small div.image_holder
+{
+	display:block;
+	width:300px;
+}
+
+#intro_small div.image_holder img
+{
+    margin-top:-17px;
+	padding:0;
+	border:none;
+}
+
+#intro_small div.advert_holder
+{
+	display:block;
+	width:312px;
+}
+
+#intro_small div.advert_holder img
+{
+    margin-top:0px;
+    margin-bottom:-10px;
+    margin-left:0px;
+	padding:0;
+	border:none;
+}
+
+#intro_small div.header_holder
+{
+	display:block;
+	width:310px;
+}
+
+#intro_small div.header_holder img
+{
+    margin-left:-6px;
+	padding:0;
+	border:none;
+}
+
+#intro_small p.readmore
+{
+	margin:0;
+	margin-left:-1px;
+}
+
+#intro_small p.readmore a
+{
+	padding:5px 15px;
+	font-weight:bold;
+    color:#FFFFFF;
+	background-color:#232323;
+}
+
+/* Intro preview-box v3 */
+#intro_mini
+{
+	padding:0px 0 15px 0;
+}
+
+#intro_mini ul
+{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+#intro_mini li
+{
+	display:block;
+	float:left;
+	width:300px;
+	margin:0 12px 0 0;
+	padding-left:6px;
+    padding-right:6px;
+    padding-bottom:10px;
+    color:#000000;
+    background-color:#FFFFFF;
+}
+
+#intro_mini li.negative
+{
+	display:block;
+	float:left;
+	width:300px;
+	margin:0 12px 0 0;
+	padding-left:6px;
+    padding-right:6px;
+    padding-bottom:10px;
+    color:#000000;            
+    background-color:#C0C0C0;
+}
+
+#intro_mini li.last
+{
+	margin-right:0;
+}
+
+#intro_mini h3, #intro_mini p, #intro_mini img, #intro_mini div
+{
+	margin:0 0 10px 0;
+	padding:0;
+}
+
+#intro_mini h3
+{
+	padding-top:2px;
+    color:#000000;
+    background-color:#FFFFFF;
+}
+
+#intro_mini h3.negative
+{
+    color:#000000;
+    background-color:#C0C0C0;
+}
+
+#intro_mini p
+{
+    line-height:16px !important;
+}
+
+#intro_mini div.image_holder
+{
+    border:none;
+	padding:0px;
+}
+
+#intro_mini div.image_holder img
+{
+    float:right;
+    clear:right;
+    margin:0 0 0 8px;
+    margin-top:-17px;
+    margin-bottom:-4px;
+    margin-right:6px;
+}
+
+#intro_mini div.header_holder
+{
+    border:none;
+	padding:0px;
+}
+
+#intro_mini div.header_holder img
+{
+    float:right;
+    clear:right;
+    margin-top:-1px;
+}
+
+#intro_mini p.readmore
+{
+	margin:0;
+	margin-left:-1px;
+}
+
+#intro_mini p.readmore a
+{
+	padding:5px 10px;
+	font-weight:bold;
+    color:#FFFFFF;
+	background-color:#232323;
+}
+
+/* Intro preview-box v1 - category menu */
+.intro_category
+{
+	padding:0px 0 15px 0;
+}
+
+.intro_category ul
+{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+.intro_category li
+{
+	display:block;
+	float:left;
+	width:300px;
+	margin:0 12px 0 0;
+	padding-left:6px;
+    padding-right:6px;
+    padding-bottom:10px;
+    color:#000000;
+    background-color:#FFFFFF;
+}
+
+.intro_category li.negative
+{
+	display:block;
+	float:left;
+	width:300px;
+	margin:0 12px 0 0;
+	padding-left:6px;
+    padding-right:6px;
+    padding-bottom:10px;
+    color:#000000;            
+    background-color:#C0C0C0;
+}
+
+.intro_category li.last
+{
+	margin-right:0;
+}
+
+.intro_category h3, .intro_category p, .intro_category img, .intro_category div
+{
+	margin:0 0 10px 0;
+	padding:0;
+}
+
+.intro_category h3
+{
+	padding-top:2px;
+    color:#000000;
+    background-color:#FFFFFF;
+}
+
+.intro_category h3.negative
+{
+    color:#000000;
+    background-color:#C0C0C0;
+}
+
+.intro_category p
+{
+    line-height:16px !important;
+}
+
+.intro_category div.image_holder
+{
+	display:block;
+	width:300px;
+}
+
+.intro_category div.image_holder img
+{
+    margin:-2px;
+	padding:0;
+	border:2px solid #000000;
+}
+
+.intro_category div.image_holder img.anime
+{
+    margin:-2px;
+	padding:0;
+	border:2px solid #BC04A0;
+}
+
+.intro_category div.image_holder img.books
+{
+    margin:-2px;
+	padding:0;
+	border:2px solid #851009;
+}
+
+.intro_category div.image_holder img.cinema
+{
+    margin:-2px;
+	padding:0;
+	border:2px solid #055CB6;
+}
+
+.intro_category div.image_holder img.comics
+{
+    margin:-2px;
+	padding:0;
+	border:2px solid #FD0000;
+}
+
+.intro_category div.image_holder img.cosplay
+{
+    margin:-2px;
+	padding:0;
+	border:2px solid #FA5A61;
+}
+
+.intro_category div.image_holder img.expos
+{
+    margin:-2px;
+	padding:0;
+	border:2px solid #000000;
+}
+
+.intro_category div.image_holder img.games
+{
+    margin:-2px;
+	padding:0;
+	border:2px solid #FD9B00;
+}
+
+.intro_category div.image_holder img.manga
+{
+    margin:-2px;
+	padding:0;
+	border:2px solid #A200FF;
+}
+
+.intro_category div.image_holder img.misc
+{
+    margin:-2px;
+	padding:0;
+	border:2px solid #777777;
+}
+
+.intro_category div.image_holder img.tv
+{
+    margin:-2px;
+	padding:0;
+	border:2px solid #028D12;
+}
+
+.intro_category p.readmore
+{
+	margin:0;
+	margin-left:-1px;
+}
+
+.intro_category p.readmore a
+{
+	padding:5px 15px;
+	font-weight:bold;
+    color:#FFFFFF;
+	background-color:#000000;
+}
+
+.intro_category p.readmore a.anime
+{
+	padding:5px 15px;
+	font-weight:bold;
+    color:#FFFFFF;
+	background-color:#BC04A0;
+}
+
+.intro_category p.readmore a.books
+{
+	padding:5px 15px;
+	font-weight:bold;
+    color:#FFFFFF;
+	background-color:#851009;
+}
+
+.intro_category p.readmore a.cinema
+{
+	padding:5px 15px;
+	font-weight:bold;
+    color:#FFFFFF;
+	background-color:#055CB6;
+}
+
+.intro_category p.readmore a.comics
+{
+	padding:5px 15px;
+	font-weight:bold;
+    color:#FFFFFF;
+	background-color:#FD0000;
+}
+
+.intro_category p.readmore a.cosplay
+{
+	padding:5px 15px;
+	font-weight:bold;
+    color:#FFFFFF;
+	background-color:#FA5A61;
+}
+
+.intro_category p.readmore a.expos
+{
+	padding:5px 15px;
+	font-weight:bold;
+    color:#FFFFFF;
+	background-color:#000000;
+}
+
+.intro_category p.readmore a.games
+{
+	padding:5px 15px;
+	font-weight:bold;
+    color:#FFFFFF;
+	background-color:#FD9B00;
+}
+
+.intro_category p.readmore a.manga
+{
+	padding:5px 15px;
+	font-weight:bold;
+    color:#FFFFFF;
+	background-color:#A200FF;
+}
+
+.intro_category p.readmore a.misc
+{
+	padding:5px 15px;
+	font-weight:bold;
+    color:#FFFFFF;
+	background-color:#777777;
+}
+
+.intro_category p.readmore a.tv
+{
+	padding:5px 15px;
+	font-weight:bold;
+    color:#FFFFFF;
+	background-color:#028D12;
+}
+
+/* Intro preview-box v2 - category menu */
+.intro_category_small
+{
+	padding:0px 0 15px 0;
+}
+
+.intro_category_small ul
+{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+.intro_category_small li
+{
+	display:block;
+	float:left;
+	width:300px;
+	margin:0 12px 0 0;
+	padding-left:6px;
+    padding-right:6px;
+    padding-bottom:10px;
+    color:#000000;
+    background-color:#FFFFFF;
+}
+
+.intro_category_small li.negative
+{
+	display:block;
+	float:left;
+	width:300px;
+	margin:0 12px 0 0;
+	padding-left:6px;
+    padding-right:6px;
+    padding-bottom:10px;
+    color:#000000;            
+    background-color:#C0C0C0;
+}
+
+.intro_category_small li.last
+{
+	margin-right:0;
+}
+
+.intro_category_small h3, .intro_category_small p, .intro_category_small img, .intro_category_small div
+{
+	margin:0 0 10px 0;
+	padding:0;
+}
+
+.intro_category_small h3
+{
+	padding-top:2px;
+    color:#000000;
+    background-color:#FFFFFF;
+}
+
+.intro_category_small h3.negative
+{
+    color:#000000;
+    background-color:#C0C0C0;
+}
+
+.intro_category_small p
+{
+    line-height:16px !important;
+}
+
+.intro_category_small div.image_holder
+{
+	display:block;
+	width:300px;
+}
+
+.intro_category_small div.image_holder img
+{
+    margin:-2px;
+	padding:0;
+	border:2px solid #000000;
+}
+
+.intro_category_small div.image_holder img.anime
+{
+    margin:-2px;
+	padding:0;
+	border:2px solid #BC04A0;
+}
+
+.intro_category_small div.image_holder img.books
+{
+    margin:-2px;
+	padding:0;
+	border:2px solid #851009;
+}
+
+.intro_category_small div.image_holder img.cinema
+{
+    margin:-2px;
+	padding:0;
+	border:2px solid #055CB6;
+}
+
+.intro_category_small div.image_holder img.comics
+{
+    margin:-2px;
+	padding:0;
+	border:2px solid #FD0000;
+}
+
+.intro_category_small div.image_holder img.cosplay
+{
+    margin:-2px;
+	padding:0;
+	border:2px solid #FA5A61;
+}
+
+.intro_category_small div.image_holder img.expos
+{
+    margin:-2px;
+	padding:0;
+	border:2px solid #000000;
+}
+
+.intro_category_small div.image_holder img.games
+{
+    margin:-2px;
+	padding:0;
+	border:2px solid #FD9B00;
+}
+
+.intro_category_small div.image_holder img.manga
+{
+    margin:-2px;
+	padding:0;
+	border:2px solid #A200FF;
+}
+
+.intro_category_small div.image_holder img.misc
+{
+    margin:-2px;
+	padding:0;
+	border:2px solid #777777;
+}
+
+.intro_category_small div.image_holder img.tv
+{
+    margin:-2px;
+	padding:0;
+	border:2px solid #028D12;
+}
+
+.intro_category_small p.readmore
+{
+	margin:0;
+	margin-left:-1px;
+}
+
+.intro_category_small p.readmore a
+{
+	padding:5px 15px;
+	font-weight:bold;
+    color:#FFFFFF;
+	background-color:#000000;
+}
+
+.intro_category_small p.readmore a.anime
+{
+	padding:5px 15px;
+	font-weight:bold;
+    color:#FFFFFF;
+	background-color:#BC04A0;
+}
+
+.intro_category_small p.readmore a.books
+{
+	padding:5px 15px;
+	font-weight:bold;
+    color:#FFFFFF;
+	background-color:#851009;
+}
+
+.intro_category_small p.readmore a.cinema
+{
+	padding:5px 15px;
+	font-weight:bold;
+    color:#FFFFFF;
+	background-color:#055CB6;
+}
+
+.intro_category_small p.readmore a.comics
+{
+	padding:5px 15px;
+	font-weight:bold;
+    color:#FFFFFF;
+	background-color:#FD0000;
+}
+
+.intro_category_small p.readmore a.cosplay
+{
+	padding:5px 15px;
+	font-weight:bold;
+    color:#FFFFFF;
+	background-color:#FA5A61;
+}
+
+.intro_category_small p.readmore a.expos
+{
+	padding:5px 15px;
+	font-weight:bold;
+    color:#FFFFFF;
+	background-color:#000000;
+}
+
+.intro_category_small p.readmore a.games
+{
+	padding:5px 15px;
+	font-weight:bold;
+    color:#FFFFFF;
+	background-color:#FD9B00;
+}
+
+.intro_category_small p.readmore a.manga
+{
+	padding:5px 15px;
+	font-weight:bold;
+    color:#FFFFFF;
+	background-color:#A200FF;
+}
+
+.intro_category_small p.readmore a.misc
+{
+	padding:5px 15px;
+	font-weight:bold;
+    color:#FFFFFF;
+	background-color:#777777;
+}
+
+.intro_category_small p.readmore a.tv
+{
+	padding:5px 15px;
+	font-weight:bold;
+    color:#FFFFFF;
+	background-color:#028D12;
+}
+
+/* Intro preview-box v3 - category menu */
+.intro_category_mini
+{
+	padding:0px 0 15px 0;
+}
+
+.intro_category_mini ul
+{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+.intro_category_mini li
+{
+	display:block;
+	float:left;
+	width:300px;
+	margin:0 12px 0 0;
+	padding-left:6px;
+    padding-right:6px;
+    padding-bottom:10px;
+    color:#000000;
+    background-color:#FFFFFF;
+}
+
+.intro_category_mini li.negative
+{
+	display:block;
+	float:left;
+	width:300px;
+	margin:0 12px 0 0;
+	padding-left:6px;
+    padding-right:6px;
+    padding-bottom:10px;
+    color:#000000;            
+    background-color:#C0C0C0;
+}
+
+.intro_category_mini li.last
+{
+	margin-right:0;
+}
+
+.intro_category_mini h3, .intro_category_mini p, .intro_category_mini img, .intro_category_mini div
+{
+	margin:0 0 10px 0;
+	padding:0;
+}
+
+.intro_category_mini h3
+{
+    color:#000000;
+    background-color:#FFFFFF;
+}
+
+.intro_category_mini h5 span
+{
+    float:right;
+    margin-right:-2px;
+    margin-top:-37px;
+    color:#000000;
+    background-color:#FFFFFF;
+}
+
+.intro_category_mini h5 span.negative
+{
+    color:#000000;
+    background-color:#C0C0C0;
+}
+
+.intro_category_mini h3.negative
+{
+    color:#000000;
+    background-color:#C0C0C0;
+}
+
+.intro_category_mini p
+{
+    line-height:16px !important;
+    margin-top:-16px;
+    margin-bottom:11px;
+}
+
+.intro_category_mini div.image_holder
+{
+    border:none;
+	padding:0px;
+}
+
+.intro_category_mini div.image_holder img
+{
+    float:right;
+    clear:right;
+    margin-top:-7px;
+    margin-bottom:-5px;
+    margin-right:-2px;
+    margin-left:8px;
+	border:2px solid #000000;
+}
+
+.intro_category_mini div.image_holder img.anime
+{
+    float:right;
+    clear:right;
+    margin-top:-7px;
+    margin-bottom:-5px;
+    margin-right:-2px;
+    margin-left:8px;
+	border:2px solid #BC04A0;
+}
+
+.intro_category_mini div.image_holder img.books
+{
+    float:right;
+    clear:right;
+    margin-top:-7px;
+    margin-bottom:-5px;
+    margin-right:-2px;
+    margin-left:8px;
+	border:2px solid #851009;
+}
+
+.intro_category_mini div.image_holder img.cinema
+{
+    float:right;
+    clear:right;
+    margin-top:-7px;
+    margin-bottom:-5px;
+    margin-right:-2px;
+    margin-left:8px;
+	border:2px solid #055CB6;
+}
+
+.intro_category_mini div.image_holder img.comics
+{
+    float:right;
+    clear:right;
+    margin-top:-7px;
+    margin-bottom:-5px;
+    margin-right:-2px;
+    margin-left:8px;
+	border:2px solid #FD0000;
+}
+
+.intro_category_mini div.image_holder img.cosplay
+{
+    float:right;
+    clear:right;
+    margin-top:-7px;
+    margin-bottom:-5px;
+    margin-right:-2px;
+    margin-left:8px;
+	border:2px solid #FA5A61;
+}
+
+.intro_category_mini div.image_holder img.expos
+{
+    float:right;
+    clear:right;
+    margin-top:-7px;
+    margin-bottom:-5px;
+    margin-right:-2px;
+    margin-left:8px;
+	border:2px solid #000000;
+}
+
+.intro_category_mini div.image_holder img.games
+{
+    float:right;
+    clear:right;
+    margin-top:-7px;
+    margin-bottom:-5px;
+    margin-right:-2px;
+    margin-left:8px;
+	border:2px solid #FD9B00;
+}
+
+.intro_category_mini div.image_holder img.manga
+{
+    float:right;
+    clear:right;
+    margin-top:-7px;
+    margin-bottom:-5px;
+    margin-right:-2px;
+    margin-left:8px;
+	border:2px solid #A200FF;
+}
+
+.intro_category_mini div.image_holder img.misc
+{
+    float:right;
+    clear:right;
+    margin-top:-7px;
+    margin-bottom:-5px;
+    margin-right:-2px;
+    margin-left:8px;
+	border:2px solid #777777;
+}
+
+.intro_category_mini div.image_holder img.tv
+{
+    float:right;
+    clear:right;
+    margin-top:-7px;
+    margin-bottom:-5px;
+    margin-right:-2px;
+    margin-left:8px;
+	border:2px solid #028D12;
+}
+
+.intro_category_mini p.readmore
+{
+	margin:0;
+	margin-left:-1px;
+}
+
+.intro_category_mini p.readmore a
+{
+	padding:5px 10px;
+	font-weight:bold;
+    color:#FFFFFF;
+	background-color:#000000;
+}
+
+.intro_category_mini p.readmore a.anime
+{
+	padding:5px 10px;
+	font-weight:bold;
+    color:#FFFFFF;
+	background-color:#BC04A0;
+}
+
+.intro_category_mini p.readmore a.books
+{
+	padding:5px 10px;
+	font-weight:bold;
+    color:#FFFFFF;
+	background-color:#851009;
+}
+
+.intro_category_mini p.readmore a.cinema
+{
+	padding:5px 10px;
+	font-weight:bold;
+    color:#FFFFFF;
+	background-color:#055CB6;
+}
+
+.intro_category_mini p.readmore a.comics
+{
+	padding:5px 10px;
+	font-weight:bold;
+    color:#FFFFFF;
+	background-color:#FD0000;
+}
+
+.intro_category_mini p.readmore a.cosplay
+{
+	padding:5px 10px;
+	font-weight:bold;
+    color:#FFFFFF;
+	background-color:#FA5A61;
+}
+
+.intro_category_mini p.readmore a.expos
+{
+	padding:5px 10px;
+	font-weight:bold;
+    color:#FFFFFF;
+	background-color:#000000;
+}
+
+.intro_category_mini p.readmore a.games
+{
+	padding:5px 10px;
+	font-weight:bold;
+    color:#FFFFFF;
+	background-color:#FD9B00;
+}
+
+.intro_category_mini p.readmore a.manga
+{
+	padding:5px 10px;
+	font-weight:bold;
+    color:#FFFFFF;
+	background-color:#A200FF;
+}
+
+.intro_category_mini p.readmore a.misc
+{
+	padding:5px 10px;
+	font-weight:bold;
+    color:#FFFFFF;
+	background-color:#777777;
+}
+
+.intro_category_mini p.readmore a.tv
+{
+	padding:5px 10px;
+	font-weight:bold;
+    color:#FFFFFF;
+	background-color:#028D12;
+}
+
+.link-disabled
+{
+    color: gray !important;
+    pointer-events: none;
+}
+
+/* Content */
+#container
+{
+    position:relative;
+	margin:0 auto 0;
+    margin-top:10px;
+	display:block;
+	width:940px;
+	padding-top:10px;
+    padding-bottom:4px;
+    padding-left:10px;
+    padding-right:10px;
+    line-height:20px !important;
+    color:#999999;
+	background-color:#1F1F1F;
+}
+
+#container a /* Highlighted Link */
+{
+	color:#1188FF;
+	background-color:#FFFFFF;
+}
+
+#container h1, #container h2, #container h3, #container h4, #container h5, #container h6
+{
+	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+	margin-bottom:20px;
+	padding-bottom:8px;
+}
+
+#container_black
+{
+    position:relative;
+	margin:0 auto 0;
+    margin-top:10px;
+	display:block;
+	width:940px;
+	padding-top:10px;
+    padding-bottom:10px;
+    padding-left:10px;
+    padding-right:10px;
+    line-height:20px !important;
+    color:#999999;
+	background-color:#1F1F1F;
+}
+
+#container_black p /* Normal Text */
+{
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    font-kerning: normal;
+    color: #AAAAAA;
+}
+
+#container_black p.larger /* Larger Text */
+{
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: #AAAAAA;
+}
+
+#container_black p.largest /* Largest Text */
+{
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    color: #AAAAAA;
+}
+
+#container_black a /* Highlighted Link */
+{
+    font-size: 14px;
+    font-weight: bold;
+    font-kerning: normal;
+	color: #1188FF;
+	background-color: #1F1F1F;
+}
+
+#container_black a:hover /* Highlighted Link on Cursor Hover */
+{
+    color: #0077FF !important;
+}
+
+#container_black ul /* Unordered List */
+{
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    font-style:italic;
+    line-height:21px !important;
+    color: #BBBBBB; 
+    list-style-image:url('images/saturn.png');  /* in styles/images */
+}
+
+#container_black ol /* Ordered List */
+{
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    font-style:italic;
+    font-weight:bold;
+    line-height:21px !important;
+    color: #BBBBBB;
+}
+
+ol /* Bespoke Ordered List */
+{
+    counter-reset:li; /* Initiate a counter */
+    margin-left:0; /* Remove the default left margin */
+    padding-left:0; /* Remove the default left padding */
+}
+
+ol > li
+{
+    position:relative; /* Create a positioning context */
+    margin:0 0 6px 30px; /* Give each list item a left margin to make room for the numbers */
+    padding:3px 8px; /* Add some spacing around the content */
+    list-style:none; /* Disable the normal item numbering */
+    background:#1F1F1F;
+}
+
+ol > li span /* use for second column of text */
+{
+    float:right;
+    margin-right:2px;
+    font-weight:bold;
+    color:#777777;
+}
+
+ol > li.black
+{
+    background:#1F1F1F;
+}
+
+ol > li.white
+{
+    background:#EEEEEE;
+}
+
+ol > li.top_border
+{
+    border-top: 2px solid #666666;
+}
+
+ol > li.bottom_border
+{
+    border-bottom: 1px solid #666666;
+}
+
+ol > li.right_border
+{
+    border-right: 2px solid #666666;
+}
+
+ol > li:before
+{
+    content:counter(li); /* Use the counter as content */
+    counter-increment:li; /* Increment the counter by 1 */
+    position:absolute; /* Position and style the numbers */
+    top:-2px;
+    left:-30px;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    width:30px;
+    height:30px;
+    margin-right:8px; /* Add some space between the number and the content for browsers that support generated content but not position it (Camino 2) */
+    padding:4px;
+    color:#FFFFFF;
+    background:#666666;
+    font-family:Arial, sans-serif;
+    font-weight:bold;
+    text-align:center;
+}
+
+li ol
+{
+    margin-top:6px;
+}
+
+ol ol li:last-child
+{
+    margin-bottom:0;
+}
+
+/* Bespoke Numbered Definition List - black background */
+.questions_and_answers_ordered_black
+{
+	counter-reset:list-counter;
+}
+
+.questions_and_answers_ordered_black dt:before
+{
+	content:counter(list-counter);
+	counter-increment:list-counter;
+    position:relative; /* Position and style the numbers */
+    top:19px;
+    left:0px;
+    margin-right:10px; /* Add some space between the number and the content for browsers that support generated content but not position it (Camino 2) */
+    margin-top:15px;  /* Digits are clipped in IE - this should prevent it */
+    margin-bottom:15px;
+    color:#FFFFFF;
+    background:#1F1F1F;
+    font-family:Arial, sans-serif;
+    font-size:50px;
+    font-weight:bold;
+    text-align:center;
+}
+
+.questions_and_answers_ordered_black dt
+{
+    font-family:Arial, sans-serif;
+    font-size:16px;
+    font-weight:bold;
+    text-align:left;
+    color:#FFFFFF;
+}
+
+.questions_and_answers_ordered_black dd
+{
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    font-weight:normal;
+    text-align:left;
+    color: #AAAAAA;
+    margin-bottom:6px;
+}
+
+/* Bespoke Numbered Definition List - white background */
+.questions_and_answers_ordered_white
+{
+	counter-reset:list-counter;
+}
+
+.questions_and_answers_ordered_white dt:before
+{
+	content:counter(list-counter);
+	counter-increment:list-counter;
+    position:relative; /* Position and style the numbers */
+    top:19px;
+    left:0px;
+    margin-right:10px; /* Add some space between the number and the content for browsers that support generated content but not position it (Camino 2) */
+    margin-top:15px;   /* Digits are clipped in IE - this should prevent it */
+    margin-bottom:15px;
+    color:#000000;
+    background:#EEEEEE;
+    font-family:Arial, sans-serif;
+    font-size:50px;
+    font-weight:bold;
+    text-align:center;
+}
+
+.questions_and_answers_ordered_white dt
+{
+    font-family:Arial, sans-serif;
+    font-size:16px;
+    font-weight:bold;
+    text-align:left;
+    color:#000000;
+}
+
+.questions_and_answers_ordered_white dd
+{
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    font-weight:normal;
+    text-align:left;
+    color:#000000;
+    margin-bottom:6px;
+}
+
+/* Bespoke non-numbered Q&A Definition List - black background */
+.questions_and_answers_black
+{
+	counter-reset:list-counter;
+}
+
+.questions_and_answers_black dt:before
+{
+	content:counter(list-counter, upper-alpha);
+	counter-reset:list-counter 17; /* Set always to letter 'Q' */       
+    position:relative; /* Position and style the numbers */
+    top:19px;
+    left:0px;
+    margin-right:15px; /* Add some space between the number and the content for browsers that support generated content but not position it (Camino 2) */
+    margin-top:15px;   /* Digits are clipped in IE - this should prevent it */
+    margin-bottom:15px;
+    color:#FFFFFF;
+    background:#1F1F1F;
+    font-family:Arial, sans-serif;
+    font-size:50px;
+    font-weight:bold;
+    text-align:center;
+}
+
+.questions_and_answers_black dt
+{
+    font-family:Arial, sans-serif;
+    font-size:18px;
+    font-weight:bold;
+    text-align:left;
+    color:#FFFFFF;
+}
+
+.questions_and_answers_black dd
+{
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    font-weight:normal;
+    text-align:left;
+    color: #AAAAAA;
+    margin-left:53px;
+    margin-bottom:6px;
+}
+
+/* Bespoke non-numbered Q&A Definition List - black background */
+.questions_and_answers_white
+{
+	counter-reset:list-counter;
+}
+
+.questions_and_answers_white dt:before
+{
+	content:counter(list-counter, upper-alpha);
+	counter-reset:list-counter 17; /* Set always to letter 'Q' */       
+    position:relative; /* Position and style the numbers */
+    top:19px;
+    left:0px;
+    margin-right:15px; /* Add some space between the number and the content for browsers that support generated content but not position it (Camino 2) */
+    margin-top:15px;   /* Digits are clipped in IE - this should prevent it */
+    margin-bottom:15px;
+    color:#000000;
+    background:#EEEEEE;
+    font-family:Arial, sans-serif;
+    font-size:50px;
+    font-weight:bold;
+    text-align:center;
+}
+
+.questions_and_answers_white dt
+{
+    font-family:Arial, sans-serif;
+    font-size:18px;
+    font-weight:bold;
+    text-align:left;
+    color:#000000;
+}
+
+.questions_and_answers_white dd
+{
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    font-weight:normal;
+    text-align:left;
+    color: #000000;
+    margin-left:53px;
+    margin-bottom:6px;
+}
+
+#container_black h1, #container_black h2
+{
+	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+	margin-bottom:15px;
+	padding-bottom:0px;
+}
+
+#container_black h3, container_black h4
+{
+	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+	margin-bottom:10px;
+	padding-bottom:0px;
+}
+
+ #container_black h5, #container_black h6
+{
+	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+	margin-bottom:5px;
+	padding-bottom:0px;
+}
+
+#container_white
+{
+    position:relative;
+	margin:0 auto 0;
+    margin-top:10px;
+	display:block;
+	width:940px;
+	padding-top:10px;
+    padding-bottom:10px;
+    padding-left:10px !important;
+    padding-right:10px !important;
+    line-height:20px !important;
+    color:#000000;
+	background-color:#EEEEEE;
+}
+
+#container_white p /* Normal Text */
+{
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    font-kerning: normal;
+    color: #000000;
+}
+
+#container_white p.larger /* Larger Text */
+{
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: #000000;
+}
+
+#container_white p.largest /* Largest Text */
+{
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    color: #000000;
+}
+
+#container_white a /* Highlighted Link */
+{
+    font-size: 14px;
+    font-weight: bold;	
+    font-kerning: normal;
+	color: #1188FF;
+	background-color: #EEEEEE;
+}
+
+#container_white a:hover /* Highlighted Link on Cursor Hover */
+{
+    color: #0077FF !important;
+}
+
+#container_white ul /* Unordered List */
+{
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    font-style:italic;
+    line-height:21px !important;
+    color: #111111;
+    list-style-image:url('images/saturn.png');  /* in styles/images */
+}
+
+#container_white ol /* Ordered List */
+{
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    line-height:21px !important;
+    font-style:italic;
+    font-weight:bold;
+    color: #111111;
+}
+
+#container_white h1, #container_white h2
+{
+	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+	margin-bottom:15px;
+	padding-bottom:0px;
+}
+
+#container_white h3, container_white h4
+{
+	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+	margin-bottom:10px;
+	padding-bottom:0px;
+}
+
+ #container_white h5, #container_white h6
+{
+	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+	margin-bottom:5px;
+	padding-bottom:0px;
+}
+
+#content
+{
+	display:block;
+	float:left;
+	width:600px;
+	padding-right:17px;
+	border-right:3px solid #333333;
+}
+
+/* Column for content on the left*/
+#column_content_left
+{
+	display:block;
+	float:left;
+	width:700px;
+    min-height:805px;
+	padding-right:17px;
+	border-right:3px solid #333333;
+}
+
+/* Column for side menu on the right*/
+#column_side_menu_right
+{
+	display:block;
+    float:right;
+	width:200px;
+}
+
+/* Comments */
+#comments
+{
+    margin-bottom:40px;
+}
+
+#comments .commentlist
+{
+    margin:0;
+    padding:0;
+}
+
+#comments .commentlist ul
+{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+#comments .commentlist li.comment_odd, #comments .commentlist li.comment_even
+{
+    margin:0 0 10px 0;
+    padding:15px;
+    list-style:none;
+}
+
+#comments .commentlist li.comment_odd
+{
+    color:#CCCCCC;
+    background-color:#333333;
+}
+
+#comments .commentlist li.comment_odd a
+{
+    color:#777777;
+    background-color:#333333;
+    font-size:13px;
+}
+
+#comments .commentlist li.comment_even
+{
+    color:#CCCCCC;
+    background-color:#1E1E1E;
+}
+
+#comments .commentlist li.comment_even a
+{
+    color:#777777;
+    background-color:#1E1E1E;
+    font-size:13px;
+}
+
+#comments .commentlist .author .name
+{
+    font-weight:bold;
+    font-size:14px;
+    color:#BBBBBB;
+}
+
+#comments .commentlist .author .wrote
+{
+    font-weight:normal;
+    font-size:14px;
+    color:#AAAAAA;
+}
+
+#comments .commentlist .submitdate
+{
+    font-weight:normal;
+    font-size:11px;
+    color:#AAAAAA;
+}
+
+#comments .commentlist p
+{
+    margin:10px 5px 10px 0;
+    padding:0;
+    font-size:13px;
+    font-weight:normal;
+    font-style:italic;
+    text-transform:none;
+}
+
+#comments .commentlist li .avatar
+{
+    float:right;
+    margin:0 0 0 10px;
+}
+
+/* Column on the right*/
+#column_right
+{
+	display:block;
+	width:300px;
+    float:right;
+	margin-right:2px;
+	padding-left:17px;
+}
+
+#column_right .holder, #column_right #featured
+{
+	display:block;
+	width:300px;
+	margin-bottom:20px;
+}
+
+#column_right .holder p
+{
+	line-height:1.6em;
+}
+
+#column_right h3
+{
+	font-size:20px;
+}
+
+#column_right .holder h3.title
+{
+	display:block;
+	width:100%;
+	height:65px;
+	margin:0;
+	padding:15px 0 0 0;
+	font-size:20px;
+	line-height:normal;
+	border-bottom:1px dashed #666666;
+}
+
+#column_right .holder h3.title img
+{
+	float:left;
+	margin:-15px 8px 0 0;
+	padding:5px;
+	border:1px solid #666666;
+}
+
+#column_right .holder p.readmore
+{
+	display:block;
+	width:100%;
+	font-weight:bold;
+	text-align:right;
+	line-height:normal;
+}
+
+#column_right div.image_holder
+{
+	display:block;
+	width:290px;
+	margin:0 0 10px 0;
+	padding:4px;
+	border:1px solid #666666;
+}
+	
+/* Featured */
+#column_right #featured a
+{
+	color:#00CBFF;
+	background-color:#1F1F1F;
+}
+
+#column_right #featured ul, #column_right #featured h3, #column_right #featured p
+{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+#column_right #featured li
+{
+	display:block;
+	width:250px;
+	margin:0;
+	padding:20px 25px;
+	color:#666666;
+	background-color:#1F1F1F;
+}
+
+#column_right #featured li p
+{
+	line-height:1.6em;
+}
+
+#column_right #featured li p.image_holder
+{
+	display:block;
+	width:240px;
+	height:90px;
+	margin:20px 0 15px 0;
+	padding:4px;
+	color:#666666;
+	background-color:#333333;
+	border:1px solid #666666;
+}
+
+#column_right #featured li h3
+{
+	margin:0;
+	padding:0 0 14px 0;
+	font-size:20px;
+	font-weight:normal;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:#666666;
+	background-color:#1F1F1F;
+	line-height:normal;
+	border-bottom:1px dashed #666666;
+}
+
+#column_right #featured p.readmore
+{
+	display:block;
+	width:100%;
+	margin-top:15px;
+	font-weight:bold;
+	text-align:right;
+	line-height:normal;
+}
+
+#column_right #latestnews
+{
+	display:block;
+	width:100%;
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+#column_right #latestnews li
+{
+	display:block;
+	margin:0 0 20px 0;
+	padding:0 0 15px 0;
+	border-bottom:1px dotted #999999;
+}
+
+#column_right #latestnews li.last
+{
+	margin-bottom:0;
+}
+
+#column_right #latestnews p
+{
+	margin:0 0 5px 0;
+	padding:0;
+}
+
+#column_right #latestnews p.readmore
+{
+	margin:0;
+	padding:0;
+}
+
+#column_right #latestnews .image_left
+{
+	margin:0 10px 10px 0;
+	padding:4px;
+}
+
+/* Column on the left*/
+#column_left
+{
+	display:block;
+	width:300px;
+    float:left;
+	margin-left:2px;
+	padding-right:17px;
+	border-right:3px solid #333333;
+}
+
+#column_left .holder, #column_left #featured
+{
+	display:block;
+	width:300px;
+	margin-bottom:20px;
+}
+
+#column_left .holder p
+{
+	line-height:1.6em;
+}
+
+#column_left h3
+{
+	font-size:20px;
+}
+
+#column_left .holder h3.title
+{
+	display:block;
+	width:100%;
+	height:65px;
+	margin:0;
+	padding:15px 0 0 0;
+	font-size:20px;
+	line-height:normal;
+	border-bottom:1px dashed #666666;
+}
+
+#column_left .holder h3.title img
+{
+	float:left;
+	margin:-15px 8px 0 0;
+	padding:5px;
+	border:1px solid #666666;
+}
+
+#column_left .holder p.readmore
+{
+	display:block;
+	width:100%;
+	font-weight:bold;
+	text-align:right;
+	line-height:normal;
+}
+
+#column_left div.image_holder
+{
+	display:block;
+	width:290px;
+	margin:0 0 10px 0;
+	padding:4px;
+	border:1px solid #666666;
+}
+	
+/* Featured */
+#column_left #featured a
+{
+	color:#00CBFF;
+	background-color:#1F1F1F;
+}
+
+#column_left #featured ul, #column_left #featured h3, #column_left #featured p
+{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+#column_left #featured li
+{
+	display:block;
+	width:250px;
+	margin:0;
+	padding:20px 25px;
+	color:#666666;
+	background-color:#1F1F1F;
+}
+
+#column_left #featured li p
+{
+	line-height:1.6em;
+}
+
+#column_left #featured li p.image_holder
+{
+	display:block;
+	width:240px;
+	height:90px;
+	margin:20px 0 15px 0;
+	padding:4px;
+	color:#666666;
+	background-color:#333333;
+	border:1px solid #666666;
+}
+
+#column_left #featured li h3
+{
+	margin:0;
+	padding:0 0 14px 0;
+	font-size:20px;
+	font-weight:normal;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:#666666;
+	background-color:#1F1F1F;
+	line-height:normal;
+	border-bottom:1px dashed #666666;
+}
+
+#column_left #featured p.readmore
+{
+	display:block;
+	width:100%;
+	margin-top:15px;
+	font-weight:bold;
+	text-align:right;
+	line-height:normal;
+}
+
+#column_left #latestnews
+{
+	display:block;
+	width:100%;
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+#column_left #latestnews li
+{
+	display:block;
+	margin:0 0 20px 0;
+	padding:0 0 15px 0;
+	border-bottom:1px dotted #999999;
+}
+
+#column_left #latestnews li.last
+{
+	margin-bottom:0;
+}
+
+#column_left #latestnews p
+{
+	margin:0 0 5px 0;
+	padding:0;
+}
+
+#column_left #latestnews p.readmore
+{
+	margin:0;
+	padding:0;
+}
+
+#column_left #latestnews .image_left
+{
+	margin:0 10px 10px 0;
+	padding:4px;
+}
+
+/* Footer */
+#footer
+{
+	position:relative;
+	margin:0 auto 0;
+	display:block;
+	width:920px;
+	padding:20px;
+	color:#98989A;
+	background-color:#232323;
+}
+
+#footer a
+{
+	color:#FFFFFF;
+	background-color:#232323;
+}
+
+#footer h3
+{
+	margin-bottom:3px;
+	border-bottom-color:#98989A;
+}
+
+#footer p, #footer ul, #footer a
+{
+	margin:0;
+	padding:0;
+	font-weight:normal;
+	list-style:none;
+	line-height:normal;
+}
+
+#footer .footbox
+{
+	display:block;
+	float:right;
+	width:190px;
+	margin:0 0 0 15px;
+	padding:0;
+}
+
+#footer li
+{
+	margin-bottom:3px;
+}
+
+#footer .last
+{
+	margin:0;
+}
+
+#footer_logo
+{
+    display:block;
+	float:left;
+	width:100px;
+}
+
+/* Copyright */
+#copyright
+{
+	position:relative;
+	margin:0 auto 0;
+	display:block;
+	width:920px;
+	padding:20px;
+	color:#525252;
+	background-color:#1F1F1F;
+}
+
+#copyright a
+{
+	color:#525252;
+	background-color:#1F1F1F;
+}
+
+#copyright p
+{
+	margin:0;
+	padding:0;
+}
+
+/* Semi-transparent button overlaying image for 'read more' button */
+#read_more_overlay
+{
+    background:url('images/read_more.png') left top no-repeat; /* in styles/images */
+    height:30px;
+    margin-top:-31px;
+    margin-left:5px;
+    position:relative;
+    z-index:888;
+}
+
+/* Semi-transparent picture overlaying image for category label */
+#category_overlay_anime
+{
+    background:url('images/header_anime_corner.gif') left top no-repeat; /* in styles/images */
+    height:100px;
+    margin-top:-323px;
+    margin-left:-4px;
+    position:relative;
+    z-index:888;
+}
+
+#category_overlay_books
+{
+    background:url('images/header_books_corner.gif') left top no-repeat; /* in styles/images */
+    height:100px;
+    margin-top:-323px;
+    margin-left:-4px;
+    position:relative;
+    z-index:888;
+}
+
+#category_overlay_cinema
+{
+    background:url('images/header_cinema_corner.gif') left top no-repeat; /* in styles/images */
+    height:100px;
+    margin-top:-323px;
+    margin-left:-4px;
+    position:relative;
+    z-index:888;
+}
+
+#category_overlay_comics
+{
+    background:url('images/header_comics_corner.gif') left top no-repeat; /* in styles/images */
+    height:100px;
+    margin-top:-323px;
+    margin-left:-4px;
+    position:relative;
+    z-index:888;
+}
+
+#category_overlay_cosplay
+{
+    background:url('images/header_cosplay_corner.gif') left top no-repeat; /* in styles/images */
+    height:100px;
+    margin-top:-323px;
+    margin-left:-4px;
+    position:relative;
+    z-index:888;
+}
+
+#category_overlay_expos
+{
+    background:url('images/header_expos_corner.gif') left top no-repeat; /* in styles/images */
+    height:100px;
+    margin-top:-323px;
+    margin-left:-4px;
+    position:relative;
+    z-index:888;
+}
+
+#category_overlay_games
+{
+    background:url('images/header_games_corner.gif') left top no-repeat; /* in styles/images */
+    height:100px;
+    margin-top:-323px;
+    margin-left:-4px;
+    position:relative;
+    z-index:888;
+}
+
+#category_overlay_manga
+{
+    background:url('images/header_manga_corner.gif') left top no-repeat; /* in styles/images */
+    height:100px;
+    margin-top:-323px;
+    margin-left:-4px;
+    position:relative;
+    z-index:888;
+}
+
+#category_overlay_misc
+{
+    background:url('images/header_misc_corner.gif') left top no-repeat; /* in styles/images */
+    height:100px;
+    margin-top:-323px;
+    margin-left:-4px;
+    position:relative;
+    z-index:888;
+}
+
+#category_overlay_tv
+{
+    background:url('images/header_tv_corner.gif') left top no-repeat; /* in styles/images */
+    height:100px;
+    margin-top:-323px;
+    margin-left:-4px;
+    position:relative;
+    z-index:888;
+}
+
+/* Category-specific vertical headers for articles */
+#draw_category_header_vertical_anime
+{
+    margin:0px;
+    padding-left:39px;
+    background:url('images/header_anime_vertical_top.gif') left top no-repeat, /* in styles/images */
+    url('images/header_anime_vertical_bottom.gif') left bottom no-repeat,
+    url('images/header_anime_vertical_middle.gif') repeat-y;
+}
+
+#draw_category_header_vertical_books
+{
+    margin:0px;
+    padding-left:39px;
+    background:url('images/header_books_vertical_top.gif') left top no-repeat, /* in styles/images */
+    url('images/header_books_vertical_bottom.gif') left bottom no-repeat,
+    url('images/header_books_vertical_middle.gif') repeat-y;
+}
+
+#draw_category_header_vertical_cinema
+{
+    margin:0px;
+    padding-left:39px;
+    background:url('images/header_cinema_vertical_top.gif') left top no-repeat, /* in styles/images */
+    url('images/header_cinema_vertical_bottom.gif') left bottom no-repeat,
+    url('images/header_cinema_vertical_middle.gif') repeat-y;
+}
+
+#draw_category_header_vertical_comics
+{
+    margin:0px;
+    padding-left:39px;
+    background:url('images/header_comics_vertical_top.gif') left top no-repeat, /* in styles/images */
+    url('images/header_comics_vertical_bottom.gif') left bottom no-repeat,
+    url('images/header_comics_vertical_middle.gif') repeat-y;
+}
+
+#draw_category_header_vertical_cosplay
+{
+    margin:0px;
+    padding-left:39px;
+    background:url('images/header_cosplay_vertical_top.gif') left top no-repeat, /* in styles/images */
+    url('images/header_cosplay_vertical_bottom.gif') left bottom no-repeat,
+    url('images/header_cosplay_vertical_middle.gif') repeat-y;
+}
+
+#draw_category_header_vertical_expos
+{
+    margin:0px;
+    padding-left:39px;
+    background:url('images/header_expos_vertical_top.gif') left top no-repeat, /* in styles/images */
+    url('images/header_expos_vertical_bottom.gif') left bottom no-repeat,
+    url('images/header_expos_vertical_middle.gif') repeat-y;
+}
+
+#draw_category_header_vertical_games
+{
+    margin:0px;
+    padding-left:39px;
+    background:url('images/header_games_vertical_top.gif') left top no-repeat, /* in styles/images */
+    url('images/header_games_vertical_bottom.gif') left bottom no-repeat,
+    url('images/header_games_vertical_middle.gif') repeat-y;
+}
+
+#draw_category_header_vertical_manga
+{
+    margin:0px;
+    padding-left:39px;
+    background:url('images/header_manga_vertical_top.gif') left top no-repeat, /* in styles/images */
+    url('images/header_manga_vertical_bottom.gif') left bottom no-repeat,
+    url('images/header_manga_vertical_middle.gif') repeat-y;
+}
+
+#draw_category_header_vertical_misc
+{
+    margin:0px;
+    padding-left:39px;
+    background:url('images/header_misc_vertical_top.gif') left top no-repeat, /* in styles/images */
+    url('images/header_misc_vertical_bottom.gif') left bottom no-repeat,
+    url('images/header_misc_vertical_middle.gif') repeat-y;
+}
+
+#draw_category_header_vertical_tv
+{
+    margin:0px;
+    padding-left:39px;
+    background:url('images/header_tv_vertical_top.gif') left top no-repeat, /* in styles/images */
+    url('images/header_tv_vertical_bottom.gif') left bottom no-repeat,
+    url('images/header_tv_vertical_middle.gif') repeat-y;
+}
+
+/* Headers & Credits for articles */
+#draw_title_header_black_background
+{
+    font-family:'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+	font-size:30px;
+    letter-spacing:1px;
+	font-weight:bold;
+    color:#FFFFFF;
+    padding-top:8px;
+    padding-bottom:7px;
+}
+
+#draw_title_header_white_background
+{
+    font-family:'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+	font-size:30px;
+    letter-spacing:1px;
+	font-weight:bold;
+    color:#000000;
+    padding-top:8px;
+    padding-bottom:7px;
+}
+
+#draw_credits_footer_black_background
+{
+    font-family:'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+	font-size:14px;
+    letter-spacing:1px;
+	font-weight:normal;
+    color:#FFFFFF;
+}
+
+#draw_credits_footer_white_background
+{
+    font-family:'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+	font-size:14px;
+    letter-spacing:1px;
+	font-weight:normal;
+    color:#000000;
+}
+
+#draw_click_on_thumbnail_black_background
+{
+    font-family:'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+	font-size:14px;
+    letter-spacing:1px;
+	font-weight:normal;
+    color:#707070;
+    float:right;
+}
+
+#draw_click_on_thumbnail_white_background
+{
+    font-family:'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+	font-size:14px;
+    letter-spacing:1px;
+	font-weight:normal;
+    color:#7F7F7F;
+    float:right;
+}
+
+/* 'Try instead' preview box with picture */
+#try_instead_white
+{
+	position:relative;
+	margin:0 auto 0;
+	display:block;
+	width:885px;
+    height:136px;
+}
+
+#try_instead_white
+{
+	padding:0px 0 15px 0;
+	display:block;
+	float:left;
+	margin:0 12px 0 0;
+	padding-left:6px;
+    padding-right:6px;
+    padding-bottom:0px;
+    color:#999999;
+	background-color:#1F1F1F;
+	border:2px solid #565656;
+}
+
+#try_instead_white h3, #try_instead_white p, #try_instead_white img, #try_instead_white div
+{
+	margin:0 0 10px 0;
+	padding:0;
+}
+
+#try_instead_white h3
+{
+	padding-top:5px;
+    margin-left:-1px;
+    color:#999999;
+	background-color:#1F1F1F;
+}
+
+#try_instead_white p
+{
+    margin-top:-8px;
+    color:#999999;
+	background-color:#1F1F1F;
+	font-size:13px;
+    line-height:16px !important;
+}
+
+#try_instead_white div.image_holder
+{
+	display:block;
+	width:307px;
+    float: left;
+    margin-top:-5px;
+    margin-bottom:6px;
+}
+
+#try_instead_white div.image_holder img
+{
+    margin:-2px;
+	padding:0;
+	border:2px solid #565656;
+}
+
+#try_instead_white p.readmore
+{
+	position:relative;
+    margin-right:-2px;
+    margin-top:-20px;
+    float:right;
+}
+
+#try_instead_white p.readmore a
+{
+	padding:4px 8px;
+	font-size:12px;
+	font-weight:bold;
+    font-kerning:none;
+    white-space: nowrap;
+    color:#000000;
+	background-color:#999999;
+}
+
+#try_instead_black
+{
+	position:relative;
+	margin:0 auto 0;
+	display:block;
+	width:885px;
+    height:136px;
+}
+
+#try_instead_black
+{
+	padding:0px 0 15px 0;
+	display:block;
+	float:left;
+	margin:0 12px 0 0;
+	padding-left:6px;
+    padding-right:6px;
+    padding-bottom:0px;
+    color:#000000;
+    background-color:#C0C0C0;
+	border:2px solid #565656;
+}
+
+#try_instead_black h3, #try_instead_black p, #try_instead_black img, #try_instead_black div
+{
+	margin:0 0 10px 0;
+	padding:0;
+}
+
+#try_instead_black h3
+{
+	padding-top:5px;
+    margin-left:-1px;
+    color:#000000;
+    background-color:#C0C0C0;
+}
+
+#try_instead_black p
+{
+    margin-top:-8px;
+    color:#000000;
+    background-color:#C0C0C0;
+	font-size:13px;
+    line-height:16px !important;
+}
+
+#try_instead_black div.image_holder
+{
+	display:block;
+	width:307px;
+    float: left;
+    margin-top:-5px;
+    margin-bottom:6px;
+}
+
+#try_instead_black div.image_holder img
+{
+    margin:-2px;
+	padding:0;
+	border:2px solid #565656;
+}
+
+#try_instead_black p.readmore
+{
+	position:relative;
+    margin-right:-2px;
+    margin-top:-20px;
+    float:right;
+}
+
+#try_instead_black p.readmore a
+{
+	padding:4px 8px;
+	font-size:12px;
+	font-weight:bold;
+    font-kerning:none;
+    white-space: nowrap;
+    color:#FFFFFF;
+	background-color:#565656;
+}
+
+.paragraph_header_first /* make some space above each paragraph header - but the first one already has some space so make it smaller */
+{
+    margin-top:10px;
+    margin-bottom:-5px;
+}
+
+.paragraph_header /* make some space above each paragraph header */
+{
+    margin-top:25px;
+    margin-bottom:-5px;
+}
+
+.shift_paragraph_up /* to correct 13px gap caused by SCORE image */
+{
+    margin-top:-13px;
+}
+
+.two_columns_left /* 2-column text (left column) */
+{
+    float:left;
+    width:50%;
+    margin-top:-10px;
+    margin-bottom:10px;
+}
+
+.two_columns_right /* 2-column text (right column) */
+{
+    float:right;
+    width:50%;
+    margin-top:-10px;
+    margin-bottom:10px;
+}
+
+.three_columns_left /* 3-column text (left column) */
+{
+    float:left;
+    width:33%;
+    margin-top:-10px;
+    margin-bottom:10px;
+}
+
+.three_columns_middle /* 3-column text (middle column) */
+{
+    float:left;
+    width:33%;
+    margin-top:-10px;
+    margin-bottom:10px;
+}
+
+.three_columns_right /* 3-column text (right column) */
+{
+    float:left;
+    width:33%;
+    margin-top:-10px;
+    margin-bottom:10px;
+}

@@ -1,0 +1,4 @@
+<!--#include virtual="stats.txt" -->
+<!--#include virtual="social.txt" -->
+<!--#include virtual="footer.txt" -->
+<!--#include virtual="copyright.txt" -->

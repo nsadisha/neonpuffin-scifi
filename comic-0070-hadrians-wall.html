@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="EN" lang="EN" dir="ltr">
+
+<head>
+    <title>SCIFI 4 EVER</title>
+    <base target="_blank" rel="noopener noreferrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="scifi, sci-fi, science fiction, science-fiction, sciencefiction, cinema, films, movies, tv, television, series, tv series, games, video games, computer games, console games, retro games, comics, graphic novels, anime, manga, cartoon, books, cosplay, costume play, news, previews, reviews, features, conventions, exhibitions" />
+    <meta name="description" content="SCIFI 4 EVER - an independent online magazine providing news, previews, reviews and features about all things sci-fi" />
+    <meta name="title" content="Hadrian's Wall (preview)" />
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <link rel="stylesheet" href="styles/layout.css" type="text/css" />
+    <!----- Fancy Box for Image Slideshow ----->
+	<link rel="stylesheet" type="text/css" media="screen" href="fancybox/jquery.fancybox-1.3.4.css" />
+	<script type="text/javascript" src="java/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="java/mdetect.js"></script>
+	<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+</head>
+
+<body id="top">
+
+<!--#include virtual="stats.txt" -->
+
+<div class="wrapper">
+    <div id="header">
+
+        <div id="logo">
+            <a href="index.html"><img src="images/rocket.png" alt="" /></a>           
+        </div>
+
+        <!--#include virtual="menu.txt" -->
+
+        <br class="clear" />
+    </div>
+</div>
+
+<div class="wrapper">
+    <div id="container_black">
+        <div id="draw_category_header_vertical_comics">
+
+            <!--#include virtual="social.txt" -->
+
+            <div id="draw_title_header_black_background">Hadrian’s Wall is set in an alternative future of the year 2053</div>
+
+            <img class="image_left" src="images_comics/comic0070-2.jpg" alt="" title="" style="border:none; margin-top:18px; margin-bottom:0px;" />
+
+            <p>From the creative team behind the critically-acclaimed comic book series <i>C.O.W.L.</i> – <a href="https://en.wikipedia.org/wiki/Kyle_Higgins" title="Kyle Higgins, American comic book writer">Kyle Higgins</a>, <i>Alec Siegel</i> and <i>Rod Reis</i> – comes a new psychological thriller in <i>‘Hadrian’s Wall’</i>, where the secrets of everyone involved are as dark as the space that surrounds them.</p>
+            <p>In the year 1983, increasing tensions between the United States and the <a href="https://en.wikipedia.org/wiki/Soviet_Union" title="The Union of Soviet Socialist Republics (USSR) - a Marxist–Leninist, single-party state on the territory of present Russia and surrounding states that existed between 1922 and 1991">Soviet Union</a> culminated with nuclear strikes on New York City and Moscow. In the decades following, the two superpowers found peace through a partnership focused on building the first colony in space. But now, 70 years later, a new <a href="https://en.wikipedia.org/wiki/Cold_War" title="Cold War - a state of political and military tension after World War II between powers of the Western and Eastern Blocs">cold war</a> simmers – between Earth and that very colony.</p>
+
+            <blockquote class="white" style="width: 353px; float: left; margin-bottom:15px;">
+                <span>
+                    In 'Hadrian’s Wall', the secrets of everyone involved are as dark as the space that surrounds them
+                </span>
+            </blockquote>
+
+            <p><i>“With C.O.W.L., Image [Comics] afforded us the tremendous opportunity to launch a creator-owned series focusing on dark, complex, morally ambiguous characters in a time of great change,” said Higgins, before continuing “We’re thrilled to continue that trend with Hadrian’s Wall, and even more thrilled to continue our partnership with Image [Comics].”</i></p>
+            <p style="margin-top:0px;">When a crewmember dies aboard one of Earth’s survey spaceships, <i>‘Hadrian’s Wall’</i>, investigator <i>Simon Moore</i> sets to determine whether foul play was involved. However, once on board, it doesn’t take <i>Simon</i> long to realise that few things aren’t what they seem... including the identities of the crew and the real reason <i>Hadrian’s Wall</i> is on the edge of <i>Colony</i> space. With every crewmember a suspect, and tensions between Earth and the <i>Colony</i> mounting, the fate of both worlds may come down to one man and one ship.</p>
+            <p><i>Hadrian’s Wall</i> #1 will be published by <a href="https://en.wikipedia.org/wiki/Image_Comics" title="Image Comics - an American comic book publisher founded in 1992">Image Comics</a> in November 2015.</p>
+
+            <br class="clear" /> <!----- Important for layout ------>
+              
+            <div id="draw_credits_footer_black_background">15/08/2015 - Source: Image Comics</div>
+
+            <br class="clear" /> <!----- Important for layout ------>
+
+        </div>
+    </div>
+</div>
+
+<!--#include virtual="footer.txt" -->
+
+<div class="wrapper">
+    <div id="copyright">
+        <p class="float_left">&copy; 2015 SCIFI<a style="color:#666666"><b>4</b></a>EVER - All Rights Reserved</p>
+        <p class="float_right"><a href="review_policy.html">Review Policy</a> | <a href="privacy_policy.html">Privacy Policy</a> | <a href="terms_of_use.html">Terms of Use</a></p>
+		<br class="clear" />
+    </div>
+</div>
+
+<!----- Slideshow for Images -->
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("a[rel=slideshow_group]").fancybox({
+            'transitionIn': 'none',
+            'transitionOut': 'none',
+            'titlePosition': 'over',
+            'titleFormat': function (title, currentArray, currentIndex, currentOpts) {
+                return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+            }
+        });
+    });
+</script>
+
+<!--#include virtual="share.txt" -->
+
+</body>
+</html>

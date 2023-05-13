@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="EN" lang="EN" dir="ltr">
+
+<head>
+    <title>SCIFI 4 EVER</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="sf, scifi, sci-fi, science fiction, science-fiction, sciencefiction, cinema, films, movies, tv, television, series, tv series, games, video games, computer games, console games, retro games, comics, graphic novels, anime, manga, cartoon, books, cosplay, costume play, news, previews, reviews, features, conventions, exhibitions" />
+    <meta name="description" content="SCIFI 4 EVER - an independent online magazine providing news, previews, reviews and features about all things sci-fi" />
+    <meta name="title" content="Contact SCIFI4EVER or Join SCIFI4EVER Forum" />
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <link rel="stylesheet" href="styles/layout.css" type="text/css" />
+    <script type="text/javascript" src="java/antispam_test.js"></script>
+    <script type="text/javascript" src="java/antispam_done.js"></script>
+</head>
+
+<body id="top">
+
+<!--#include virtual="stats.txt" -->
+
+<div class="wrapper">
+    <div id="header">
+
+        <div id="logo">
+            <a href="index.html"><img src="images/rocket.png" alt="" /></a>           
+        </div>
+
+        <!--#include virtual="menu.txt" -->
+
+        <br class="clear" />
+    </div>
+</div>
+
+<div class="wrapper">
+    <div id="container_black">
+        <div id="content">
+ 
+        <h3 style="margin-top:5px; margin-left:3px;">Contact Us</h3>
+
+        <div id="respond">
+            <form  id="form" action="" method="post">
+                <p style="margin-left:4px; margin-bottom:-1px;">
+                    <input type="text" name="realname" id="realname" tabindex="1" value="" size="50" />
+                    <label for="realname"><small>Name (required)</small></label>
+                </p>
+                <p style="margin-left:4px; margin-bottom:-1px;">
+                    <input type="text" name="company" id="company" tabindex="2" value="" size="50" />
+                    <label for="company"><small>Company</small></label>
+                </p>
+                <p style="margin-left:4px; margin-bottom:-1px;">
+                    <input type="text" name="email" id="email" tabindex="3" value="" size="50" />
+                    <label for="email"><small>E-Mail Address (required)</small></label>
+                </p>
+                <p style="margin-left:4px; margin-bottom:-1px;">
+                    <input type="text" id="antispam" tabindex="3" value="" maxlength="5" placeholder="" size="50" oninput="antispam_done();" />
+                    <label for="antispam"><small>Anti-Spam Test (required)</small></label>
+                </p>
+                <p style="margin-left:4px; margin-bottom:-1px;">
+                    <textarea name="message" id="message" tabindex="4" cols="72" rows="11"></textarea>
+                    <br/><label for="message"><small>Message (required)</small></label>
+                </p>
+                <p style="margin-left:3px; margin-bottom:-10px;">
+                    <input name="recipients" type="hidden" id="recipient" value="default" />
+                    <input name="subject" type="hidden" id="subject" value="SCIFI4EVER: Contact Us" />
+                    <input name="redirect" type="hidden" id="redirect" value="http://www.scifi4ever.com/main-contact-thanks.html" />
+                    <input type="submit" id="submit" tabindex="5" value="Send" onclick="document.getElementById('form').submit()" />&nbsp;&nbsp; <!-- avoid name="" for button as this would be included in email -->
+                    <input type="reset" id="clear" tabindex="6" value="Clear" onclick="document.getElementById('form').reset()" />
+                </p>
+            </form>
+        </div>
+
+        <br class="clear" /> <!----- Important for layout ------>
+
+    </div>
+
+        <div id="column_right">
+            <h2 style="margin-top:7px;">FORUM</h2>
+            <div class="holder">
+				<a href="http://www.scifi4ever.com/forum/index.php"><img src="images/forum_big.png" alt="" title="" style="margin-bottom: 10px;"/></a>
+				<p><a href="http://www.scifi4ever.com/forum/index.php">Login or register to join the discussion</a></p>
+				<h3>SCIFI<a style="color:#666666; font-size:20px">4</a>EVER - Forum</h3>
+				<p style="margin-top:0px; font-size:13px"><i>SCIFI4EVER community forum is a place where</i></p>
+				<p style="margin-top:-16px; font-size:13px"><i>you can interact with other like-minded people</i></p>
+				<p style="margin-top:-16px; font-size:13px"><i>and have discussions about various topics</i></p>
+				<p style="margin-top:-16px; font-size:13px"><i>from our web site as well as ask questions.</i></p>
+				<p style="margin-top:-6px; font-size:13px"><b>Please read the <i>Forum Rules</i> before posting !</b></p>
+            </div>
+        </div>
+
+        <br class="clear" /> <!----- Important for layout ------>
+
+    </div>
+</div>
+    
+<script type="text/javascript">
+window.onload = function ()
+{
+    antispam_test();
+}
+</script>
+
+<!--#include virtual="footer.txt" -->
+
+<!--#include virtual="copyright.txt" -->
+
+</body>
+</html>
