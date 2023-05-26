@@ -3027,6 +3027,10 @@ ol ol li:last-child
     margin-bottom:10px;
 }
 
+#header #toggle-menu{
+	display: none;
+}
+
 
 /* //////////////// Responsice CSS //////////////// */
 
@@ -3101,6 +3105,25 @@ ol ol li:last-child
 		padding-left: 20px;
 		padding-right: 20px;
 	}
+
+	#header {
+		display: flex;
+		width: 100%;
+	}
+	#header .menu{
+		margin-left: auto;
+	}
+	#header a
+	{
+		padding: 0px 10px;
+		font-size: 1rem;
+	}
+	#header #toggle-menu{
+		display: none;
+	}
+	#header .menu.opened .subs {
+		top: unset;
+	}
 }
 
 @media only screen and (max-width: 668px) {
@@ -3111,6 +3134,50 @@ ol ol li:last-child
 		grid-template-columns: 1fr;
 		gap: 20px;
 		text-align: center;
+	}
+
+	#header {
+		display: grid;
+		position: relative;
+	}
+	#header #logo{
+		display: flex;
+		transform: translateY(10px);
+	}
+	#header #toggle-menu{
+		position: absolute;
+		margin-left: auto;
+		display: grid;
+		place-items: center;
+		color: white;
+		font-size: 2rem;
+		cursor: pointer;
+		top: 15px;
+		right: 10px;
+	}
+	#header .menu {
+		display: grid;
+		margin-left: unset;
+		overflow: hidden;
+		height: 0;
+	}
+	#header .menu.opened{
+		animation: menuToggle forwards 1s;
+		margin-top: 20px;
+	}
+	#header .menu.opened .subs {
+		top: unset;
+	}
+
+	@keyframes menuToggle {
+		from {
+			overflow: hidden;
+			height: 0;
+		}
+		to {
+			overflow: visible;
+			height: 100%;
+		}
 	}
 }
 
