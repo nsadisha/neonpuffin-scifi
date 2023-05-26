@@ -175,6 +175,7 @@ div.wrapper h3
 
 div.wrapper h4
 {
+	position: relative;
 	margin:0;
 	padding:0 0 8px 0;
 	font-size:22px;
@@ -257,21 +258,27 @@ div.wrapper h6
 #featured
 {
 	padding:15px 0 15px 0;
+	display: grid;
+	grid-template-columns: 575px 360px;
+	gap: 5px;
 }
 
 #featured .float_left
 {
+	position: relative;
 	display:block;
-	float:left;
-	width:575px;
+	width:100%;
 	height:320px;
+}
+
+#featured .float_left a img {
+	width: 100%;
 }
 
 #featured .float_right
 {
 	display:block;
-	float:right;
-	width:360px;
+	width:100%;
 	height:300px;
 	padding:10px;
 	color:#000000;
@@ -399,13 +406,13 @@ div.wrapper h6
 
 #intro li.negative
 {
-	display:block;
+	/* display:block;
 	float:left;
 	width:300px;
 	margin:0 12px 0 0;
 	padding-left:6px;
     padding-right:6px;
-    padding-bottom:10px;
+    padding-bottom:10px; */
     color:#000000;            
     background-color:#C0C0C0;
 }
@@ -442,7 +449,7 @@ div.wrapper h6
 #intro div.image_holder
 {
 	display:block;
-	width:300px;
+	width:100%;
 }
 
 #intro div.image_holder img
@@ -507,13 +514,13 @@ div.wrapper h6
 
 #intro_small li.negative
 {
-	display:block;
+	/* display:block;
 	float:left;
 	width:300px;
 	margin:0 12px 0 0;
 	padding-left:6px;
     padding-right:6px;
-    padding-bottom:10px;
+    padding-bottom:10px; */
     color:#000000;            
     background-color:#C0C0C0;
 }
@@ -642,13 +649,13 @@ div.wrapper h6
 
 #intro_mini li.negative
 {
-	display:block;
+	/* display:block;
 	float:left;
 	width:300px;
 	margin:0 12px 0 0;
 	padding-left:6px;
     padding-right:6px;
-    padding-bottom:10px;
+    padding-bottom:10px; */
     color:#000000;            
     background-color:#C0C0C0;
 }
@@ -2570,10 +2577,11 @@ ol ol li:last-child
 #category_overlay_cinema
 {
     background:url('images/header_cinema_corner.gif') left top no-repeat; /* in styles/images */
+	width: 100%;
     height:100px;
-    margin-top:-323px;
-    margin-left:-4px;
-    position:relative;
+	top: -4px;
+    left:-4px;
+    position:absolute;
     z-index:888;
 }
 
@@ -3017,4 +3025,50 @@ ol ol li:last-child
     width:33%;
     margin-top:-10px;
     margin-bottom:10px;
+}
+
+
+/* //////////////// Responsice CSS //////////////// */
+
+@media only screen and (max-width: 960px) {
+	div.wrapper {
+		/* overflow: hidden; */
+		width:100vw;
+	}
+
+	#featured {
+		width: 100%;
+		grid-template-columns: 1fr;
+		grid-template-rows: max-content max-content;
+		justify-content: center;
+		gap: 10px;
+	}
+
+	#featured .float_left {
+		height: fit-content;
+	}
+
+	#featured .float_right {
+		width: unset;
+	}
+
+	#intro, #intro_small, #intro_mini
+	{
+		width: 100%;
+		display: grid !important;
+		grid-template-columns: auto !important;
+		justify-content: center;
+		height: min-content;
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+
+	#intro li, #intro_small li, #intro_mini li
+	{
+		float:unset;
+		margin:unset;
+		margin-bottom: 1rem;
+		color:#000000;
+		background-color:#FFFFFF;
+	}
 }
