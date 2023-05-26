@@ -3071,4 +3071,51 @@ ol ol li:last-child
 		color:#000000;
 		background-color:#FFFFFF;
 	}
+
+	#footer {
+		width: 100%;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 20px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#footer #footer_logo {
+		margin-left:20px;
+	}
+	#footer .footbox
+	{
+		margin:0;
+		padding:0 20px;
+	}
+
+	#copyright {
+		max-width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+		display: grid;
+		grid-template-columns: max-content max-content;
+		justify-content: space-between;
+	}
+	#copyright p{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+@media only screen and (max-width: 668px) {
+	#footer {
+		grid-template-columns: 1fr 1fr;
+	}
+	#copyright {
+		grid-template-columns: 1fr;
+		gap: 20px;
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	#footer {
+		grid-template-columns: 1fr;
+	}
 }
