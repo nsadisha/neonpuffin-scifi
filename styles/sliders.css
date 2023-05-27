@@ -58,7 +58,7 @@
 /* //////////////// Responsice CSS //////////////// */
 
 @media only screen and (max-width: 960px) {
-    .banner li a img{
+    .banner li a img, .banner li img{
         width: 100vw;
     }
 

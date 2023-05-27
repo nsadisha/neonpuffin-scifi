@@ -80,6 +80,7 @@ a
 .image_left, .image_right
 {
     padding:0px;
+	max-width: 500px;
 }
 
 .image_left
@@ -120,6 +121,7 @@ a
 {
     padding:0px;
     padding-top:10px;
+	max-width: 230px;
 }
 
 .image_book_left
@@ -210,12 +212,18 @@ div.wrapper h6
 	width:960px;
 }
 
+#slideshow {
+	width: 100%;
+	max-width: 960px;
+}
+
 .slideshow_multiple
 {
     position:relative;
 	margin:0 auto 0;
 	display:block;
-	width:960px;
+	width: 100%;
+	max-width:960px;
 }
 
 /* General - Categories */
@@ -760,13 +768,13 @@ div.wrapper h6
 
 .intro_category li.negative
 {
-	display:block;
+	/* display:block;
 	float:left;
 	width:300px;
 	margin:0 12px 0 0;
 	padding-left:6px;
     padding-right:6px;
-    padding-bottom:10px;
+    padding-bottom:10px; */
     color:#000000;            
     background-color:#C0C0C0;
 }
@@ -1005,13 +1013,13 @@ div.wrapper h6
 
 .intro_category_small li.negative
 {
-	display:block;
+	/* display:block;
 	float:left;
 	width:300px;
 	margin:0 12px 0 0;
 	padding-left:6px;
     padding-right:6px;
-    padding-bottom:10px;
+    padding-bottom:10px; */
     color:#000000;            
     background-color:#C0C0C0;
 }
@@ -1250,13 +1258,13 @@ div.wrapper h6
 
 .intro_category_mini li.negative
 {
-	display:block;
+	/* display:block;
 	float:left;
 	width:300px;
 	margin:0 12px 0 0;
 	padding-left:6px;
     padding-right:6px;
-    padding-bottom:10px;
+    padding-bottom:10px; */
     color:#000000;            
     background-color:#C0C0C0;
 }
@@ -3031,6 +3039,9 @@ ol ol li:last-child
 	display: none;
 }
 
+#container_black .picture_with_text_on_black img{
+	width: 892px;
+}
 
 /* //////////////// Responsice CSS //////////////// */
 
@@ -3056,7 +3067,7 @@ ol ol li:last-child
 		width: unset;
 	}
 
-	#intro, #intro_small, #intro_mini
+	#intro, #intro_small, #intro_mini, .intro_category, .intro_category_small, .intro_category_mini
 	{
 		width: 100%;
 		display: grid !important;
@@ -3067,7 +3078,7 @@ ol ol li:last-child
 		margin-bottom: 0;
 	}
 
-	#intro li, #intro_small li, #intro_mini li
+	#intro li, #intro_small li, #intro_mini li, .intro_category li, .intro_category_small li, .intro_category_mini li
 	{
 		float:unset;
 		margin:unset;
@@ -3090,7 +3101,7 @@ ol ol li:last-child
 	#footer .footbox
 	{
 		margin:0;
-		padding:0 20px;
+		padding:0 0 0 20px;
 	}
 
 	#copyright {
@@ -3124,6 +3135,91 @@ ol ol li:last-child
 	#header .menu.opened .subs {
 		top: unset;
 	}
+
+	#container_black, #container_white {
+		width: 100%;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+	#container_black p, #container_white p{
+		padding-right: 10px;
+	}
+	#container_black img, #container_white img{
+		width: 100%;
+		box-sizing: border-box !important;
+	}
+	#container_black .picture_with_text_on_black, #container_white .picture_with_text_on_white{
+		padding-left: 0;
+		padding-right: 0;
+		margin-right: 0;
+		margin-left: 0;
+	}
+	#container_black .picture_with_text_on_black img, #container_white .picture_with_text_on_white img{
+		width: 97%;
+		box-sizing: border-box !important;
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+
+	#container_black #draw_title_header_black_background,  #container_white #draw_title_header_white_background {
+		line-height: 30px !important;
+	}
+
+	#container_black h2, #container_white h2 {
+		line-height: 27px;
+	}
+
+
+	#try_instead_black {
+		width: 100%;
+		padding: 0;
+		height: unset;
+	}
+
+	#column_side_menu_right
+	{
+		float: unset;
+		width: 100%;
+	}
+	#column_content_left {
+		float: unset;
+		width: 100%;
+		padding-right: 0;
+		min-height: unset;
+	}
+	.tabbedmenubox{
+		position: relative;
+		margin-left: 10px;
+	}
+
+	#container_black ol > li, #container_white ol > li{
+		display: flex;
+	}
+	#container_black ol > li span, #container_white ol > li span{
+		float: unset;
+		margin-left: auto;
+	}
+
+	#container_black #content {
+		padding-right: 0;
+		float: unset;
+		width: 100%;
+		border-right: none;
+	}
+
+	#container_black #respond #form input, #respond #form textarea{
+		width: 100%;
+	}
+
+	#container_black #column_right{
+		float: unset;
+		margin-top: 2rem;
+	}
+
+	.capital_letter {
+		width: unset !important;
+	}
+
 }
 
 @media only screen and (max-width: 668px) {
@@ -3181,8 +3277,67 @@ ol ol li:last-child
 	}
 }
 
+@media only screen and (max-width: 610px) {
+	#respond {
+		width: 100%;
+	}
+
+	#respond #about_louis_dash {
+		aspect-ratio: 600 / 290;
+		height: unset;
+		background-size: cover;
+	}
+	
+	#respond #about_louis_portrait {
+		background-size: cover;
+		height: unset;
+		aspect-ratio: 150 / 150;
+		width: 25%;
+		margin-top: -39%;
+		margin-left: 11.4%;
+	}
+
+	#respond #about_louis_heart {
+		background-size: cover;
+		height: unset;
+		aspect-ratio: 200 / 75;
+		width: 33%;
+		margin-left: 47%;
+		margin-top: -19%;
+		margin-bottom: 140px;
+	}
+
+	#respond #about_ying_dash {
+		aspect-ratio: 600 / 290;
+		height: unset;
+		background-size: cover;
+	}
+
+	#respond #about_ying_portrait {
+		background-size: cover;
+		height: unset;
+		aspect-ratio: 150 / 150;
+		width: 25%;
+		margin-top: -39%;
+		margin-left: 11.4%;
+	}
+
+	#respond #about_ying_heart {
+		background-size: cover;
+		height: unset;
+		aspect-ratio: 200 / 75;
+		width: 33%;
+		margin-left: 47%;
+		margin-top: -19%;
+	}
+}
+
 @media only screen and (max-width: 450px) {
 	#footer {
 		grid-template-columns: 1fr;
+	}
+
+	#respond #about_louis_heart {
+		margin-bottom: 100px;
 	}
 }
