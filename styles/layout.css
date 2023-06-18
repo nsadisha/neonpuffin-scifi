@@ -2509,6 +2509,11 @@ ol ol li:last-child
 	padding:0;
 }
 
+#footer .footbox.both-categories
+{
+	display: none;
+}
+
 #footer li
 {
 	margin-bottom:3px;
@@ -3336,8 +3341,25 @@ ol ol li:last-child
 	#footer {
 		grid-template-columns: 1fr;
 	}
+	#footer .footbox.both-categories
+	{
+		display: unset;
+	}
+	#footer .footbox.single-category
+	{
+		display: none;
+	}
 
 	#respond #about_louis_heart {
 		margin-bottom: 100px;
+	}
+
+	#featured .float_right ul
+	{
+		display: flex;
+		justify-content: space-between;
+	}
+	#featured .float_right ul li{
+		margin: 0;
 	}
 }
