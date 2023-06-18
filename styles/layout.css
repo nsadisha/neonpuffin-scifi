@@ -3363,3 +3363,9 @@ ol ol li:last-child
 		margin: 0;
 	}
 }
+
+@media only screen and (max-width: 370px){
+	.image_book_left, .image_book_right {
+		min-width: 90% !important;
+	}
+}
