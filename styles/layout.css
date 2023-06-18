@@ -3048,6 +3048,17 @@ ol ol li:last-child
 	width: 892px;
 }
 
+#sp_left_para{
+	max-width:33%; 
+}
+#sp_left_para{
+	max-width:33%; 
+}
+#sp_middle_img{
+	float:left;
+	max-width:34%; 
+}
+
 /* //////////////// Responsice CSS //////////////// */
 
 @media only screen and (max-width: 960px) {
@@ -3225,6 +3236,17 @@ ol ol li:last-child
 		width: unset !important;
 	}
 
+	#sp_left_para{
+		max-width: unset; 
+	}
+	#sp_right_para{
+		max-width: unset; 
+	}
+	#sp_middle_img{
+		float:unset;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 @media only screen and (max-width: 668px) {
