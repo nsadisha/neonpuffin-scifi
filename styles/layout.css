@@ -3384,6 +3384,14 @@ ol ol li:last-child
 	#featured .float_right ul li{
 		margin: 0;
 	}
+
+	.intro_category_mini div.image_holder img.books{
+		max-height: 35vw;
+	}
+
+	.intro_category_mini div.image_holder img.cosplay{
+		max-height: 35vw;
+	}
 }
 
 @media only screen and (max-width: 370px){
