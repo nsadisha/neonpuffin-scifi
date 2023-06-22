@@ -3044,9 +3044,9 @@ ol ol li:last-child
 	display: none;
 }
 
-#container_black .picture_with_text_on_black img{
+/* #container_black .picture_with_text_on_black img{
 	width: 892px;
-}
+} */
 
 #sp_left_para{
 	max-width:33%; 
