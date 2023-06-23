@@ -1,3 +1,4 @@
+<span id="toggle-menu">≡</span>
 <ul class="menu">
 	<li><a href="index.html">HOME</a></li>
 	<li><a href="index-cinema.html">CINEMA</a>
@@ -45,3 +46,5 @@
         	</ul>
 	</li>
 </ul>
+
+<script src="java/script.js" defer></script>
